@@ -27,11 +27,25 @@ public class ReqisterServlet extends HttpServlet {
                 out.println("<h2>Email :" + email + "</h2>");
                 out.println("<h2>Gender :" + gender + "</h2>");
                 out.println("<h2>Course :" + course + "</h2>");
+                
+                //jdbc
+                //
+                //saved to db
+                
+                RequestDispatcher rd=request.getRequestDispatcher("success");
+                rd.forward(request, response);
+                
             } else {
                 out.println("<h2>You hava not accepted terms and condition</h2>");
             }
         } else {
             out.println("<h2>You hava not accepted terms and condition</h2>");
+        //i want to include output of index.html
+        
+        //ge the object of requestDisptacher
+        RequestDispatcher rd=request.getRequestDispatcher("index.html");
+        //include
+        rd.include(request, response);
         }
 
     }
