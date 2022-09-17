@@ -6,13 +6,12 @@
 	 version="3.1">
     
     <servlet>
-        <servlet-name>myservlet</servlet-name>
-        <servlet-class>com.practice.MyServlet</servlet-class>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.practices.ReqisterServlet</servlet-class>
     </servlet>
-    
     <servlet-mapping>
-        <servlet-name>myservlet</servlet-name>
-        <url-pattern>/myservlet</url-pattern>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/ReqisterServlet</url-pattern>
     </servlet-mapping>
     
     <session-config>
